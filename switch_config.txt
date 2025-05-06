@@ -1,0 +1,15 @@
+vlan 10
+vlan 20
+vlan 30
+interface ethernet 1/1
+switchport
+switchport mode access
+switchport access vlan 10
+interface ethernet 1/2
+switchport
+switchport mode access
+switchport access vlan 10
+interface ethernet 1/10
+switchport
+switchport mode trunk
+switchport trunk native vlan 30
